@@ -1,5 +1,5 @@
 {% set name = "sscws" %}
-{% set version = "2.4" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
-  sha256: ef8fd69de106fecd2e466e8baf060182a191404e37da0f990661f64de2744b03
+  sha256: 3e18a6df489c5244ff4e182ee4b2c9169555275e302a4ce270c05786ab0c132c
 
 build:
   noarch: python
