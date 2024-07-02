@@ -144,4 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@berniegsfc](https://github.com/berniegsfc/)
+* [@candeynasa](https://github.com/candeynasa/)
+* [@ericthewizard](https://github.com/ericthewizard/)
 
