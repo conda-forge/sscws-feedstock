@@ -1,13 +1,14 @@
+{% set python_min = python_min|default("3.6") %}
 {% set name = "sscws" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
-  sha256: 3e18a6df489c5244ff4e182ee4b2c9169555275e302a4ce270c05786ab0c132c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
+  sha256: 13555853d51ce8ca9b065b22f190e17360cd720795b5bfcb4f9679442200a345
 
 build:
   noarch: python
@@ -16,10 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >={{ python_min }}.*
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}.*
     - python-dateutil >=2.8.0
     - requests >=2.20
     - numpy >=1.19.4
@@ -31,6 +33,7 @@ test:
   commands:
     - pip check
   requires:
+    - python >={{ python_min }}
     - pip
 
 about:
