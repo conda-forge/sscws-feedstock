@@ -1,3 +1,4 @@
+{% set python_min = python_min|default("3.6") %}
 {% set name = "sscws" %}
 {% set version = "2.4.2" %}
 
@@ -16,10 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >={{ python_min }}.*
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}.*
     - python-dateutil >=2.8.0
     - requests >=2.20
     - numpy >=1.19.4
@@ -31,6 +33,7 @@ test:
   commands:
     - pip check
   requires:
+    - python >={{ python_min }}
     - pip
 
 about:
