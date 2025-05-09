@@ -41,6 +41,17 @@ about:
   summary: NASA's Satellite Situation Center Web Service Client Library
   license: NOSL
   license_file: NASA_Open_Source_Agreement_1.3.txt
+  description: |
+    NASA's [Satellite Situation Center](https://sscweb.gsfc.nasa.gov/)
+    (SSC) is a system to cast geocentric spacecraft location information
+    into a framework of (empirical) geophysical regions and mappings of
+    spacecraft locations along lines of the Earth's magnetic field.
+    This library implements the client side of the
+    [SSC RESTful web services](https://sscweb.gsfc.nasa.gov/WebServices/REST/)
+    and can return data for any of
+    [these spacecraft](https://sscweb.gsfc.nasa.gov/scansat.shtml).
+    For more general details about the SSC web services, see
+    https://sscweb.gsfc.nasa.gov/WebServices/REST/.
 
 extra:
   recipe-maintainers:
