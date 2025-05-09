@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.6") %}
 {% set name = "sscws" %}
-{% set version = "2.4.3" %}
+{% set version = "2.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
-  sha256: ab4d5dcb9d6233bbca2be94bac6ef476384342e48882d77bedc3306c0fe5dff9
+  sha256: afedb9b37d8b3c8400e3cbe6cac4effcf5a875f818d89c1ac9ad6220f3ff53de
 
 build:
   noarch: python
@@ -41,6 +41,17 @@ about:
   summary: NASA's Satellite Situation Center Web Service Client Library
   license: NOSL
   license_file: NASA_Open_Source_Agreement_1.3.txt
+  description: |
+    NASA's [Satellite Situation Center](https://sscweb.gsfc.nasa.gov/)
+    (SSC) is a system to cast geocentric spacecraft location information
+    into a framework of (empirical) geophysical regions and mappings of
+    spacecraft locations along lines of the Earth's magnetic field.
+    This library implements the client side of the
+    [SSC RESTful web services](https://sscweb.gsfc.nasa.gov/WebServices/REST/)
+    and can return data for any of
+    [these spacecraft](https://sscweb.gsfc.nasa.gov/scansat.shtml).
+    For more general details about the SSC web services, see
+    https://sscweb.gsfc.nasa.gov/WebServices/REST/.
 
 extra:
   recipe-maintainers:
