@@ -9,6 +9,16 @@ Package license: NOSL
 
 Summary: NASA's Satellite Situation Center Web Service Client Library
 
+NASA's [Satellite Situation Center](https://sscweb.gsfc.nasa.gov/)
+(SSC) is a system to cast geocentric spacecraft location information
+into a framework of (empirical) geophysical regions and mappings of
+spacecraft locations along lines of the Earth's magnetic field.
+This library implements the client side of the
+[SSC RESTful web services](https://berniegsfc.github.io/sscws/REST/).  See
+[sscws package API reference](https://berniegsfc.github.io/sscws/REST/py/sscws/index.html)
+for additional details.
+
+
 Current build status
 ====================
 
