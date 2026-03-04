@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.6") %}
 {% set name = "sscws" %}
-{% set version = "2.4.6" %}
+{% set version = "2.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
-  sha256: 5d5207bfabead82df12a517c25e0333405c7a2daf1b8bc2068d7ef25b6ac1469
+  sha256: 9d71ca7ff5e221aaaeaffa1ce2b0c9d7a6256c9dd401831e86752d6961f86a9d
 
 build:
   noarch: python
