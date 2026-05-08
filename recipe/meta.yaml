@@ -1,4 +1,4 @@
-{% set python_min = python_min|default("3.6") %}
+{% set python_min = python_min|default("3.9") %}
 {% set name = "sscws" %}
 {% set version = "2.5.0" %}
 
@@ -26,6 +26,7 @@ requirements:
     - requests >=2.20
     - numpy >=1.19.4
     - urllib3 >=1.26.16
+    - pydantic >=2.12.5
 
 test:
   imports:
@@ -48,7 +49,7 @@ about:
     spacecraft locations along lines of the Earth's magnetic field.
     This library implements the client side of the
     [SSC RESTful web services](https://berniegsfc.github.io/sscws/REST/).  See
-    [sscws package API reference](https://berniegsfc.github.io/sscws/REST/py/sscws/index.html)
+    [sscws package API reference](https://berniegsfc.github.io/sscws/REST/py/api/)
     for additional details.
 
 extra:
