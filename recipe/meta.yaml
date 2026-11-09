@@ -19,13 +19,12 @@ requirements:
   host:
     - python >={{ python_min }}.*
     - pip
-    - setuptools
+    - setuptools >=77.0.3
   run:
     - python >={{ python_min }}.*
     - python-dateutil >=2.8.0
-    - requests >=2.20
+    - httpx2 >=2.16.0
     - numpy >=1.19.4
-    - urllib3 >=1.26.16
     - pydantic >=2.12.5
 
 test:
