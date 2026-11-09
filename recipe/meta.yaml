@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("3.9") %}
 {% set name = "sscws" %}
-{% set version = "2.5.1" %}
+{% set version = "2.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/sscws-{{ version }}.tar.gz
-  sha256: fba2ac4640eb6ec68d1223cf78784ff0bec028d1297179ab76cebb441d58051b
+  sha256: a2044acb1c0fde74673888845d5815c0a812666c31879b56e81707f439a2818c
 
 build:
   noarch: python
